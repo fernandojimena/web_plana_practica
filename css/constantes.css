@@ -1,0 +1,27 @@
+:root {
+    --color : red;
+    --bgColor : antiquewhite;
+    --text : rgb(38, 38, 38);
+}
+
+/* Config general */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bgColor);
+}
+
+@font-face {
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    /* intenta arreglar cuando no lo reconoce internet explorer */
+    src:    url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+            url("fonts/nevis.woff") format("woff"),
+            url("fonts/nevis.ttf") format("truetype"),
+            url("fonts/nevis.svg") format("svg");   
+    font-weight: normal;
+    font-style: normal;  
+}

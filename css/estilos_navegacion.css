@@ -1,0 +1,50 @@
+#nav {
+    background-color: var(--text);
+    height: 40px;
+    width: 100%;
+    font-family: "helvetica";
+    font-size: .9em;
+    color: var(--bgColor);
+}
+#nav ul {
+    width: 1024px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: var(--bgColor);
+    transition: color 1s ease;
+}
+
+#nav > ul > li {
+    font-size: 1em;
+    line-height: 40px;
+    border-right: 1px solid white;
+    padding: 0px 20px;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+#nav > ul > li:first-child {
+    border-left: 1px solid white;
+}
+#nav > ul > li:hover {
+    background-color: var(--bgColor);
+}
+#nav > ul > li:hover > a{
+    color: var(--text);
+}
+
+
+#nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    background-color: var(--text);
+    color: var(--bgColor);
+    z-index: 1;
+    width: 150px;
+}
+#nav > ul > li:hover > ul{
+    display: block;
+}
