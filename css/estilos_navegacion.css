@@ -25,6 +25,7 @@
     padding: 0px 20px;
     display: inline-block;
     transition: background-color 1s ease;
+    position: relative;
 }
 #nav > ul > li:first-child {
     border-left: 1px solid white;
@@ -40,6 +41,7 @@
 #nav > ul > li > ul{
     display: none;
     position: absolute;
+    left: 0px;
     background-color: var(--text);
     color: var(--bgColor);
     z-index: 1;
@@ -47,4 +49,8 @@
 }
 #nav > ul > li:hover > ul{
     display: block;
+
+}
+#nav > ul > li:hover > ul > li:hover {
+        box-shadow: 0px 0px 2px white inset;
 }
